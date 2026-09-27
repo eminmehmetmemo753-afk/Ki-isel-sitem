@@ -1,10 +1,13 @@
 <!DOCTYPE html><html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emir Yazılım 🚀</title>  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Emir Yazılım 🚀</title>  <style>
     html {
       scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
@@ -12,22 +15,28 @@
       background: #111827;
       color: white;
       text-align: center;
-      padding: 30px 20px;
       margin: 0;
+      padding: 20px;
     }
 
     h1 {
-      font-size: 40px;
-      margin-top: 30px;
+      font-size: 42px;
+      margin-top: 35px;
+    }
+
+    h2 {
+      margin-bottom: 12px;
     }
 
     p {
       color: #cbd5e1;
-      font-size: 18px;
+      font-size: 17px;
+      line-height: 1.6;
     }
 
     nav {
-      margin: 30px 0;
+      margin: 30px auto;
+      max-width: 700px;
     }
 
     nav a {
@@ -38,18 +47,61 @@
       padding: 12px 18px;
       margin: 5px;
       border-radius: 10px;
+      transition: 0.2s;
     }
 
     nav a:hover {
       background: #6366f1;
     }
 
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 70px 10px;
+      scroll-margin-top: 20px;
+    }
+
     .kart {
       background: #1f2937;
       padding: 25px;
       margin: 20px auto;
-      max-width: 400px;
-      border-radius: 15px;
+      max-width: 500px;
+      border-radius: 16px;
+      border: 1px solid #374151;
+    }
+
+    .urun {
+      background: #1f2937;
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 550px;
+      border-radius: 18px;
+      border: 1px solid #4b5563;
+    }
+
+    .etiket {
+      display: inline-block;
+      background: #312e81;
+      color: #c7d2fe;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .ozellik {
+      text-align: left;
+      max-width: 350px;
+      margin: 20px auto;
+      color: #cbd5e1;
+      line-height: 2;
+    }
+
+    .fiyat {
+      font-size: 32px;
+      font-weight: bold;
+      color: #a5b4fc;
+      margin: 20px;
     }
 
     .buton {
@@ -57,60 +109,201 @@
       background: #6366f1;
       color: white;
       text-decoration: none;
-      padding: 14px 25px;
+      padding: 14px 24px;
       border-radius: 10px;
+      margin: 7px;
       font-size: 16px;
-      margin-top: 15px;
+      transition: 0.2s;
     }
 
     .buton:hover {
       background: #4f46e5;
+      transform: translateY(-2px);
     }
 
-    section {
-      padding: 60px 10px;
-      scroll-margin-top: 20px;
+    .satinal {
+      background: #16a34a;
     }
-  </style></head><body>  <h1>Emir Yazılım 🚀</h1>  <p>Web sitesi ve özel yazılım hizmetleri</p>  <nav>
-    <a href="#anasayfa">🏠 Ana Sayfa</a>
-    <a href="#hizmetler">💻 Hizmetler</a>
-    <a href="#iletisim">📩 İletişim</a>
-  </nav>  <section id="anasayfa">
-    <h2>Hoş Geldiniz 👋</h2><p>
-  Modern web siteleri, Discord botları ve özel yazılımlar geliştiriyorum.
+
+    .satinal:hover {
+      background: #15803d;
+    }
+
+    footer {
+      border-top: 1px solid #374151;
+      margin-top: 30px;
+      padding: 30px;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 600px) {
+
+      h1 {
+        font-size: 32px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px auto;
+        max-width: 280px;
+      }
+
+      .urun {
+        padding: 22px 15px;
+      }
+
+      .buton {
+        display: block;
+        margin: 10px auto;
+        max-width: 280px;
+      }
+    }
+  </style></head><body>  <!-- BAŞLIK -->  <h1>Emir Yazılım 🚀</h1>  <p>
+    Hazır kodlar, web siteleri ve özel yazılım çözümleri.
+  </p>  <!-- MENÜ -->  <nav><a href="#anasayfa">
+  🏠 Ana Sayfa
+</a>
+
+<a href="#hizmetler">
+  💻 Hizmetler
+</a>
+
+<a href="#kodlar">
+  🛒 Kodlarım
+</a>
+
+<a href="#iletisim">
+  📩 İletişim
+</a>
+
+  </nav>  <!-- ANA SAYFA -->  <section id="anasayfa"><h2>
+  Profesyonel Kodlar ve Web Siteleri
+</h2>
+
+<p>
+  Web projelerinizi hızlı ve modern şekilde oluşturmanız
+  için hazır kodlar ve özel yazılım çözümleri.
 </p>
+
+<a href="#kodlar" class="buton">
+  🛒 Kodları Gör
+</a>
 
 <a href="#iletisim" class="buton">
   📩 İletişime Geç
 </a>
 
-  </section>  <section id="hizmetler"><h2>💻 Hizmetlerim</h2>
+  </section>  <!-- HİZMETLER -->  <section id="hizmetler"><h2>💻 Hizmetlerim</h2>
 
 <div class="kart">
+
   <h2>🌐 Web Sitesi</h2>
+
   <p>
-    İşletmeniz için modern ve mobil uyumlu web siteleri.
+    İşletmeler için modern, mobil uyumlu web siteleri.
   </p>
+
 </div>
+
 
 <div class="kart">
-  <h2>🤖 Discord Botu</h2>
+
+  <h2>🤖 Discord Botları</h2>
+
   <p>
-    Sunucunuz için özel Discord botları.
+    Discord sunucuları için özel bot sistemleri.
   </p>
+
 </div>
+
 
 <div class="kart">
-  <h2>💻 Özel Kodlama</h2>
+
+  <h2>⚙️ Özel Yazılım</h2>
+
   <p>
-    İhtiyacınıza göre küçük yazılımlar ve özel kodlar.
+    İhtiyacınıza özel küçük yazılımlar ve kodlama çözümleri.
   </p>
+
 </div>
 
-  </section>  <section id="iletisim"><h2>📩 İletişim</h2>
+  </section>  <!-- KODLARIM -->  <section id="kodlar"><h2>🛒 Kodlarım</h2>
 
 <p>
-  Bir proje yaptırmak istiyorsanız benimle iletişime geçebilirsiniz.
+  Hazır projelerimi inceleyebilir ve satın almak için
+  benimle iletişime geçebilirsiniz.
+</p>
+
+
+<!-- ÜRÜN -->
+
+<div class="urun">
+
+  <span class="etiket">
+    ⭐ Yeni
+  </span>
+
+  <h2>
+    🌐 Business Website Starter Kit
+  </h2>
+
+  <p>
+    Küçük işletmeler için hazırlanmış modern ve
+    mobil uyumlu web sitesi şablonu.
+  </p>
+
+
+  <div class="ozellik">
+
+    ✅ Mobil uyumlu tasarım<br>
+
+    ✅ Modern ana sayfa<br>
+
+    ✅ Hizmetler bölümü<br>
+
+    ✅ İletişim bölümü<br>
+
+    ✅ Fiyat listesi bölümü<br>
+
+    ✅ Müşteri yorumları bölümü<br>
+
+    ✅ SSS bölümü<br>
+
+    ✅ HTML + CSS + JavaScript<br>
+
+    ✅ Kolay kurulum
+
+  </div>
+
+
+  <div class="fiyat">
+    €9.99
+  </div>
+
+
+  <a
+    href="#"
+    class="buton"
+    onclick="alert('Demo yakında eklenecek!'); return false;"
+  >
+    👀 Demo
+  </a>
+
+
+  <a
+    href="mailto:eminmehmetmemo753@gmail.com?subject=Business%20Website%20Starter%20Kit%20Satın%20Almak%20İstiyorum"
+    class="buton satinal"
+  >
+    🛒 Satın Al
+  </a>
+
+</div>
+
+  </section>  <!-- İLETİŞİM -->  <section id="iletisim"><h2>📩 İletişim</h2>
+
+<p>
+  Bir kod satın almak veya özel bir proje yaptırmak
+  istiyorsanız benimle iletişime geçebilirsiniz.
 </p>
 
 <a
@@ -120,5 +313,11 @@
   📧 E-posta Gönder
 </a>
 
-  </section></body>
+  </section>  <!-- ALT BİLGİ -->  <footer>© 2026 Emir Yazılım 🚀
+
+<br><br>
+
+Hazır kodlar ve özel yazılım çözümleri.
+
+  </footer></body>
 </html>
